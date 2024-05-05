@@ -1,0 +1,18 @@
+				Survei Kepuasan Pelayanan Masyarakat
+-----------------------------------------------------------------------------------------------
+|
+|
+|	Link mengakses: - localhost/surveipengadilan (Halaman Survei)
+|			- localhost/surveipengadilan/login (Halaman Admin)
+|
+|
+|
+|	Akses Login:	- username:admin
+|			  password:admin
+|			
+|			- username:pimpinan
+|			- password:pimpinan
+|
+|
+|
+-----------------------------------------------------------------------------------------------

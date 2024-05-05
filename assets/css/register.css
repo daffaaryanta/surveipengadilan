@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* input section */
+.container{
+    width: 65%;
+    height: 100vh;
+    background: linear-gradient(110deg, rgb(18, 129, 64) 0%, rgb(81, 179, 110) 100%);
+    position: relative;
+}
+
+.input-box{
+    width: 75%;
+    height: 85%;
+    position: relative;
+    margin: 50vh auto;
+    transform: translateY(-50%);
+    overflow: hidden;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button-box{
+    width: 250px;
+    margin: 25px auto;
+    position: relative;
+    border-bottom: 1px solid rgb(61, 60, 60);
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 18px;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid #0a9b42;
+    transition: .5s;
+}
+
+#login-text{
+    color: #000;
+    font-weight: 600;
+}
+
+#signup-text{
+    color: #777;
+    font-weight: 300;
+}
+
+.input-group-login{
+    position: absolute;
+    margin: 8% auto 0 auto;
+    width: 75%;
+    transition: .5s;
+}
+
+.input-group-signup{
+    position: absolute;
+    margin:0 auto;
+    width: 75%;
+    transition: .5s;
+}
+
+.input{
+    padding-bottom: 16px;
+}
+
+.confirm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input.pw-confirm{
+    width: 47%;
+}
+
+.input span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.invisible{
+    display: none;
+}
+
+.input input{
+    width: 100%;
+    padding: 14px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid rgba(22, 22, 22, .4);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    background: transparent;
+}
+
+label.show-pw{
+    font-size: .8em;
+    margin-left: 8px;
+    color: #444;
+}
+
+#submit-btn-login{
+    position: absolute;
+    font-size: 16px;
+    width: 60%;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: block;
+    left: 50%;
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    background: #0a8b26;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+#submit-btn-signup{
+    font-size: 16px;
+    width: 60%;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+    background: #0a8b26;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.submit-btn:hover{
+    background: #1f9c3a;
+}
+
+#login{
+    transform: translateX(17%);
+}
+
+#signup{
+    transform: translateX(140%);
+}
+
+span.error{
+    font-size: .8em;
+    color: red;
+    margin-bottom: -8px;
+}
+
+/* image section */
+.img-box{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7),
+                inset 0 0 25px rgba(0, 0, 0, 0.5),
+                inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* mobile */
+@media(max-width:900px){
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container{
+        position: absolute;
+        background: transparent;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .input-box{
+        width: 70%;
+        background: white;
+        transform: translateY(-50%);
+    }
+
+    .img-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+@media(max-height:550px){
+    .input-box{
+        overflow-Y: scroll;
+    }
+
+    .submit-btn{
+        margin-bottom: 25px;
+    }
+}

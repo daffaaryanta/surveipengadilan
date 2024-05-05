@@ -1,0 +1,39 @@
+/* .pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > a:active,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #131313;
+    background-color: rgb(53, 202, 103);
+    border-color: #ddd;
+} */
+
+.pagination > li > a
+{
+    background-color: white;
+    color: rgb(90, 90, 90);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #353535;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: rgb(60, 185, 102) !Important;
+    border: solid 1px rgb(60, 185, 102) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: rgb(60, 185, 102) !Important;
+    border: solid 1px rgb(60, 185, 102);
+}
